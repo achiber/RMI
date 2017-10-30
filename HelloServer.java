@@ -5,9 +5,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
-
 public class HelloServer {
-
 	public static void main(String[] args) {
 		try {
 			IHello rhello = new HelloImpl();

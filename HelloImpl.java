@@ -18,4 +18,12 @@ public class HelloImpl extends UnicastRemoteObject implements IHello{
 	public int sum(int a, int b) {
 		return a+b;
 	}
+	@Override
+	public User getUser() {
+		User user = new User();
+		user.setAge(18);
+		user.setEmail("achiberx@gmail.com");
+		user.setName("xiaohuihui");
+		return user;
+	}
 }
